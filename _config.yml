@@ -28,8 +28,8 @@ github_username: syltken
 # Header pages
 header_pages:
   - index.md
-  - privacy-policy.md
-  - terms-of-use.md
+  - docs/privacy-policy.md
+  - docs/terms-of-use.md
 
 # Build settings
 markdown: kramdown
@@ -51,6 +51,3 @@ exclude:
 # SEO and metadata
 lang: en
 timezone: UTC
-
-# Navigation structure
-collections_dir: docs

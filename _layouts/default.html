@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  
+  <!-- Import Minima theme CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  
+  <!-- SEO -->
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📱</text></svg>">
+</head>
+<body>
+  <div class="site-container">
+    <header class="site-header">
+      <div class="wrapper">
+        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        
+        <nav class="site-nav">
+          <div class="nav-links">
+            <a href="{{ '/' | relative_url }}" class="page-link">Home</a>
+            <a href="{{ '/privacy-policy/' | relative_url }}" class="page-link">Privacy Policy</a>
+            <a href="{{ '/terms-of-use/' | relative_url }}" class="page-link">Terms of Use</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper">
+        <div class="footer-content">
+          <p>&copy; {{ 'now' | date: "%Y" }} Syltken. All rights reserved.</p>
+          <p>Built with Jekyll and hosted on GitHub Pages</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <style>
+    /* Basic styling to ensure the page looks good */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+    }
+    
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+    
+    .site-header {
+      border-bottom: 1px solid #e1e5e9;
+      padding: 1rem 0;
+      background-color: #fff;
+    }
+    
+    .site-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #2c3e50;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .site-nav {
+      float: right;
+      margin-top: 0.25rem;
+    }
+    
+    .nav-links a {
+      color: #667eea;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+    }
+    
+    .nav-links a:hover {
+      color: #764ba2;
+    }
+    
+    .page-content {
+      padding: 2rem 0;
+      min-height: calc(100vh - 200px);
+    }
+    
+    .site-footer {
+      border-top: 1px solid #e1e5e9;
+      padding: 2rem 0;
+      background-color: #f8f9fa;
+      text-align: center;
+    }
+    
+    .footer-content p {
+      margin: 0.5rem 0;
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+    
+    /* Clear floats */
+    .wrapper::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .site-nav {
+        float: none;
+        margin-top: 1rem;
+      }
+      
+      .nav-links a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      
+      .wrapper {
+        padding: 0 15px;
+      }
+    }
+  </style>
+</body>
+</html>
