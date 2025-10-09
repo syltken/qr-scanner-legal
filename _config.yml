@@ -1,0 +1,56 @@
+# Site settings
+title: Scan Master Legal Documents
+email: support@syltken.com
+description: >-
+  Official privacy policy and terms of use for Scan Master - A privacy-focused 
+  QR code and barcode scanner application.
+baseurl: "/scan-master-legal"
+url: "https://syltken.github.io"
+
+# Theme
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Minima theme configuration
+minima:
+  skin: classic
+
+# Author information
+author:
+  name: Syltken Development Team
+  email: support@syltken.com
+
+# Social links (optional)
+github_username: syltken
+
+# Header pages
+header_pages:
+  - index.md
+  - privacy-policy.md
+  - terms-of-use.md
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# SEO and metadata
+lang: en
+timezone: UTC
+
+# Navigation structure
+collections_dir: docs

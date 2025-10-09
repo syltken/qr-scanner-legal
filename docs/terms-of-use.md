@@ -1,3 +1,10 @@
+---
+layout: page
+title: Terms of Use
+permalink: /terms-of-use/
+nav_order: 3
+---
+
 # Terms of Use - Scan Master
 
 **Effective Date:** October 9, 2025

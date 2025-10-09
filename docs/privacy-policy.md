@@ -1,3 +1,10 @@
+---
+layout: page
+title: Privacy Policy
+permalink: /privacy-policy/
+nav_order: 2
+---
+
 # Privacy Policy - Scan Master
 
 **Last Updated:** October 9, 2025

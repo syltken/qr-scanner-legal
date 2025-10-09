@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://syltken.github.io/scan-master-legal/sitemap.xml
