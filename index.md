@@ -8,7 +8,7 @@ title: Scan Master Legal
     <h1 class="hero-title">📱 Scan Master</h1>
     <p class="hero-subtitle">Privacy-Focused QR Code & Barcode Scanner</p>
     <p class="hero-description">
-      Your trusted companion for scanning and generating QR codes and barcodes. 
+      Your trusted companion for scanning and generating QR codes and barcodes.
       Built with privacy as our core principle - all processing happens locally on your device.
     </p>
   </div>
@@ -17,7 +17,7 @@ title: Scan Master Legal
 <div class="legal-navigation">
   <h2>📋 Legal Documents</h2>
   <p>Access our comprehensive legal documentation below. We believe in transparency and want you to understand exactly how our app works and what rights you have.</p>
-  
+
   <div class="document-grid">
     <div class="document-card">
       <div class="document-icon">🔒</div>
@@ -27,7 +27,7 @@ title: Scan Master Legal
         <span class="last-updated">Last Updated: October 9, 2025</span>
       </div>
     </div>
-    
+
     <div class="document-card">
       <div class="document-icon">📜</div>
       <h3><a href="docs/terms-of-use.html">Terms of Use</a></h3>
@@ -233,45 +233,45 @@ title: Scan Master Legal
     background: #2d3748;
     border-color: #4a5568;
   }
-  
+
   .document-card h3 {
     color: #e2e8f0;
   }
-  
+
   .document-card p {
     color: #a0aec0;
   }
-  
+
   .document-meta {
     color: #718096;
     border-color: #4a5568;
   }
-  
+
   .app-features {
     background: #2d3748;
   }
-  
+
   .feature-item {
     background: #4a5568;
   }
-  
+
   .feature-item h4 {
     color: #e2e8f0;
   }
-  
+
   .feature-item p {
     color: #a0aec0;
   }
-  
+
   .contact-section {
     background: #2d3748;
     border-color: #4a5568;
   }
-  
+
   .contact-section h2 {
     color: #e2e8f0;
   }
-  
+
   .contact-section p {
     color: #a0aec0;
   }
@@ -282,25 +282,25 @@ title: Scan Master Legal
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.1rem;
   }
-  
+
   .hero-description {
     font-size: 1rem;
   }
-  
+
   .document-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   .document-card,
   .app-features,
   .contact-section {

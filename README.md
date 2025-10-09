@@ -42,7 +42,7 @@ To run this site locally:
    # Clone the repository
    git clone https://github.com/syltken/scan-master-legal.git
    cd scan-master-legal
-   
+
    # Install dependencies
    bundle install
    ```
@@ -51,7 +51,7 @@ To run this site locally:
    ```bash
    bundle exec jekyll serve
    ```
-   
+
    Visit `http://localhost:4000/scan-master-legal` in your browser.
 
 ## 📁 Project Structure
