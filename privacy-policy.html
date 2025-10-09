@@ -90,13 +90,71 @@
             color: #6c757d;
             margin-top: 3rem;
         }
+        /* Enhanced Mobile Responsiveness */
         @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
             .nav a {
                 display: block;
-                margin: 0.5rem 0;
+                margin: 0.25rem 0;
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+            }
+            .header {
+                padding: 0.75rem 0;
             }
             .title {
-                font-size: 2rem;
+                font-size: 1.8rem;
+                margin-bottom: 1.5rem;
+            }
+            .content {
+                padding: 1.5rem 0;
+                line-height: 1.7;
+            }
+            h1, h2 {
+                font-size: 1.5rem;
+                margin-top: 1.5rem;
+            }
+            h3 {
+                font-size: 1.25rem;
+            }
+            p, li {
+                font-size: 0.95rem;
+            }
+            ul, ol {
+                padding-left: 1.25rem;
+            }
+            .footer {
+                padding: 1.5rem 0;
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 10px;
+            }
+            .title {
+                font-size: 1.6rem;
+                padding-bottom: 0.75rem;
+            }
+            .nav a {
+                padding: 0.6rem 0.8rem;
+                margin: 0.2rem 0;
+                font-size: 0.85rem;
+            }
+            h1, h2 {
+                font-size: 1.3rem;
+            }
+            h3 {
+                font-size: 1.1rem;
+            }
+            p, li {
+                font-size: 0.9rem;
+            }
+            ul, ol {
+                padding-left: 1rem;
             }
         }
     </style>

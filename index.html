@@ -90,13 +90,79 @@
             color: #6c757d;
             margin-top: 3rem;
         }
+        
+        /* Touch-friendly interactions */
+        .document-card:hover,
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .nav a:active,
+        .document-card:active {
+            transform: scale(0.98);
+        }
+        
+        /* Improved readability */
+        .document-card a:hover,
+        .document-card a:focus {
+            color: #667eea;
+        }
+        /* Enhanced Mobile Responsiveness */
         @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
             .nav a {
                 display: block;
-                margin: 0.5rem 0;
+                margin: 0.25rem 0;
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+            }
+            .header {
+                padding: 0.75rem 0;
             }
             .title {
-                font-size: 2rem;
+                font-size: 1.8rem;
+                margin-bottom: 1.5rem;
+            }
+            .content {
+                padding: 1.5rem 0;
+            }
+            h1, h2 {
+                font-size: 1.5rem;
+                margin-top: 1.5rem;
+            }
+            h3 {
+                font-size: 1.25rem;
+            }
+            .footer {
+                padding: 1.5rem 0;
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 10px;
+            }
+            .title {
+                font-size: 1.6rem;
+                padding-bottom: 0.75rem;
+            }
+            .nav a {
+                padding: 0.6rem 0.8rem;
+                margin: 0.2rem 0;
+                font-size: 0.85rem;
+            }
+            h1, h2 {
+                font-size: 1.3rem;
+            }
+            h3 {
+                font-size: 1.1rem;
+            }
+            p, li {
+                font-size: 0.95rem;
             }
         }
     </style>
@@ -114,44 +180,44 @@
         <div class="content">
             <h1 class="title">📱 Scan Master Legal Documents</h1>
 
-            <div style="text-align: center; margin: 2rem 0; padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 1rem;">
-                <h2 style="color: white; margin-bottom: 1rem;">Privacy-Focused QR Code & Barcode Scanner</h2>
-                <p style="color: white; opacity: 0.9; font-size: 1.1rem;">All processing happens locally on your device. No data collection, no tracking, complete user control.</p>
+            <div class="hero-section" style="text-align: center; margin: 2rem 0; padding: 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 1rem;">
+                <h2 style="color: white; margin-bottom: 1rem; font-size: clamp(1.25rem, 4vw, 1.75rem);">Privacy-Focused QR Code & Barcode Scanner</h2>
+                <p style="color: white; opacity: 0.9; font-size: clamp(0.95rem, 3vw, 1.1rem); max-width: 600px; margin: 0 auto;">All processing happens locally on your device. No data collection, no tracking, complete user control.</p>
             </div>
 
             <h2>📋 Legal Documents</h2>
             <p>Access our comprehensive legal documentation below. We believe in transparency and want you to understand exactly how our app works and what rights you have.</p>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
-                <div style="background: white; border: 2px solid #e1e5e9; border-radius: 1rem; padding: 2rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔒</div>
-                    <h3><a href="/scan-master-legal/privacy-policy.html" style="color: #2c3e50; text-decoration: none; font-weight: 600;">Privacy Policy</a></h3>
-                    <p style="color: #5a6c7d; line-height: 1.6;">Learn how we protect your privacy with our local-only processing approach. No data collection, no tracking, complete user control.</p>
-                    <small style="color: #8798ad;">Last Updated: October 9, 2025</small>
+            <div class="document-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                <div class="document-card" style="background: white; border: 2px solid #e1e5e9; border-radius: 1rem; padding: 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                    <div style="font-size: clamp(2rem, 8vw, 3rem); margin-bottom: 1rem;">🔒</div>
+                    <h3><a href="/scan-master-legal/privacy-policy.html" style="color: #2c3e50; text-decoration: none; font-weight: 600; font-size: clamp(1.1rem, 4vw, 1.25rem);">Privacy Policy</a></h3>
+                    <p style="color: #5a6c7d; line-height: 1.6; font-size: clamp(0.9rem, 3vw, 1rem);">Learn how we protect your privacy with our local-only processing approach. No data collection, no tracking, complete user control.</p>
+                    <small style="color: #8798ad; font-size: clamp(0.8rem, 2.5vw, 0.9rem);">Last Updated: October 9, 2025</small>
                 </div>
-
-                <div style="background: white; border: 2px solid #e1e5e9; border-radius: 1rem; padding: 2rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease;">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">📜</div>
-                    <h3><a href="/scan-master-legal/terms-of-use.html" style="color: #2c3e50; text-decoration: none; font-weight: 600;">Terms of Use</a></h3>
-                    <p style="color: #5a6c7d; line-height: 1.6;">Understand your rights and responsibilities when using Scan Master. Clear, fair terms designed to protect both users and developers.</p>
-                    <small style="color: #8798ad;">Effective: October 9, 2025</small>
+                
+                <div class="document-card" style="background: white; border: 2px solid #e1e5e9; border-radius: 1rem; padding: 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                    <div style="font-size: clamp(2rem, 8vw, 3rem); margin-bottom: 1rem;">📜</div>
+                    <h3><a href="/scan-master-legal/terms-of-use.html" style="color: #2c3e50; text-decoration: none; font-weight: 600; font-size: clamp(1.1rem, 4vw, 1.25rem);">Terms of Use</a></h3>
+                    <p style="color: #5a6c7d; line-height: 1.6; font-size: clamp(0.9rem, 3vw, 1rem);">Understand your rights and responsibilities when using Scan Master. Clear, fair terms designed to protect both users and developers.</p>
+                    <small style="color: #8798ad; font-size: clamp(0.8rem, 2.5vw, 0.9rem);">Effective: October 9, 2025</small>
                 </div>
             </div>
 
-            <div style="margin: 3rem 0; text-align: center;">
-                <h3 style="color: #2c3e50;">✨ Key Features</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0;">
-                    <div style="padding: 1rem; background: white; border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <strong>🔍 Universal Scanner</strong><br>
-                        <small>QR codes, barcodes, multiple formats</small>
+            <div class="features-section" style="margin: 2.5rem 0; text-align: center;">
+                <h3 style="color: #2c3e50; font-size: clamp(1.25rem, 4vw, 1.5rem); margin-bottom: 1.5rem;">✨ Key Features</h3>
+                <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+                    <div class="feature-card" style="padding: 1rem; background: white; border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <strong style="font-size: clamp(0.9rem, 3vw, 1rem);">🔍 Universal Scanner</strong><br>
+                        <small style="font-size: clamp(0.8rem, 2.5vw, 0.9rem);">QR codes, barcodes, multiple formats</small>
                     </div>
-                    <div style="padding: 1rem; background: white; border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <strong>📶 WiFi QR Codes</strong><br>
-                        <small>WiFi network connection</small>
+                    <div class="feature-card" style="padding: 1rem; background: white; border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <strong style="font-size: clamp(0.9rem, 3vw, 1rem);">📶 WiFi QR Codes</strong><br>
+                        <small style="font-size: clamp(0.8rem, 2.5vw, 0.9rem);">WiFi network connection</small>
                     </div>
-                    <div style="padding: 1rem; background: white; border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <strong>🔒 Privacy First</strong><br>
-                        <small>All processing on your device</small>
+                    <div class="feature-card" style="padding: 1rem; background: white; border-radius: 0.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <strong style="font-size: clamp(0.9rem, 3vw, 1rem);">🔒 Privacy First</strong><br>
+                        <small style="font-size: clamp(0.8rem, 2.5vw, 0.9rem);">All processing on your device</small>
                     </div>
                 </div>
             </div>
