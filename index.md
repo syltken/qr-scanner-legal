@@ -21,7 +21,7 @@ title: Scan Master Legal
   <div class="document-grid">
     <div class="document-card">
       <div class="document-icon">🔒</div>
-      <h3><a href="docs/privacy-policy.html">Privacy Policy</a></h3>
+      <h3><a href="{{ site.baseurl }}/privacy-policy/">Privacy Policy</a></h3>
       <p>Learn how we protect your privacy with our local-only processing approach. No data collection, no tracking, complete user control.</p>
       <div class="document-meta">
         <span class="last-updated">Last Updated: October 9, 2025</span>
@@ -30,7 +30,7 @@ title: Scan Master Legal
 
     <div class="document-card">
       <div class="document-icon">📜</div>
-      <h3><a href="docs/terms-of-use.html">Terms of Use</a></h3>
+      <h3><a href="{{ site.baseurl }}/terms-of-use/">Terms of Use</a></h3>
       <p>Understand your rights and responsibilities when using Scan Master. Clear, fair terms designed to protect both users and developers.</p>
       <div class="document-meta">
         <span class="last-updated">Effective: October 9, 2025</span>
