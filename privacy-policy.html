@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Scan Master Legal Documents</title>
-    <meta name="description" content="Privacy Policy for Scan Master - A privacy-focused QR code and barcode scanner application.">
+    <title>Privacy Policy - Scan Master Pro</title>
+    <meta name="description" content="Privacy Policy for Scan Master Pro - Premium QR code and barcode scanner with advanced privacy protection.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📱</text></svg>">
     <style>
         body {
@@ -33,14 +33,17 @@
             text-decoration: none;
             margin: 0 1rem;
             font-weight: 500;
-            padding: 0.5rem 1rem;
+            padding: 0.75rem 1rem;
             border-radius: 0.25rem;
             transition: all 0.3s ease;
             display: inline-block;
+            min-height: 44px;
+            box-sizing: border-box;
         }
-        .nav a:hover {
+        .nav a:hover, .nav a:focus {
             background: #667eea;
             color: white;
+            outline: 2px solid #667eea;
         }
         .nav a.active {
             background: #667eea;
@@ -53,7 +56,7 @@
         .title {
             text-align: center;
             color: #2c3e50;
-            font-size: 2.5rem;
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
             margin-bottom: 2rem;
             padding-bottom: 1rem;
             border-bottom: 2px solid #e1e5e9;
@@ -62,6 +65,7 @@
             color: #2c3e50;
             margin-top: 2rem;
             margin-bottom: 1rem;
+            font-size: clamp(1.3rem, 4vw, 1.5rem);
         }
         h1 {
             border-bottom: 2px solid #667eea;
@@ -71,13 +75,19 @@
             color: #667eea;
             margin-top: 1.5rem;
             margin-bottom: 0.75rem;
+            font-size: clamp(1.1rem, 3.5vw, 1.25rem);
         }
         p, li {
             color: #5a6c7d;
             margin-bottom: 1rem;
+            font-size: clamp(0.9rem, 3vw, 1rem);
         }
         ul, ol {
             margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
         }
         strong {
             color: #2c3e50;
@@ -89,7 +99,26 @@
             border-top: 1px solid #e1e5e9;
             color: #6c757d;
             margin-top: 3rem;
+            font-size: clamp(0.85rem, 2.5vw, 0.95rem);
         }
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea15, #764ba215);
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0.5rem;
+        }
+        .pro-badge {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+
         /* Enhanced Mobile Responsiveness */
         @media (max-width: 768px) {
             .container {
@@ -104,30 +133,15 @@
             .header {
                 padding: 0.75rem 0;
             }
-            .title {
-                font-size: 1.8rem;
-                margin-bottom: 1.5rem;
-            }
             .content {
                 padding: 1.5rem 0;
-                line-height: 1.7;
-            }
-            h1, h2 {
-                font-size: 1.5rem;
-                margin-top: 1.5rem;
-            }
-            h3 {
-                font-size: 1.25rem;
-            }
-            p, li {
-                font-size: 0.95rem;
-            }
-            ul, ol {
-                padding-left: 1.25rem;
             }
             .footer {
                 padding: 1.5rem 0;
-                font-size: 0.9rem;
+            }
+            .highlight-box {
+                padding: 1rem;
+                margin: 1rem 0;
             }
         }
 
@@ -135,23 +149,11 @@
             .container {
                 padding: 0 10px;
             }
-            .title {
-                font-size: 1.6rem;
-                padding-bottom: 0.75rem;
-            }
             .nav a {
                 padding: 0.6rem 0.8rem;
                 margin: 0.2rem 0;
                 font-size: 0.85rem;
-            }
-            h1, h2 {
-                font-size: 1.3rem;
-            }
-            h3 {
-                font-size: 1.1rem;
-            }
-            p, li {
-                font-size: 0.9rem;
+                min-height: 40px;
             }
             ul, ol {
                 padding-left: 1rem;
@@ -160,179 +162,165 @@
     </style>
 </head>
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <nav class="nav">
             <a href="/scan-master-legal/">🏠 Home</a>
             <a href="/scan-master-legal/privacy-policy.html" class="active">🔒 Privacy Policy</a>
             <a href="/scan-master-legal/terms-of-use.html">📜 Terms of Use</a>
         </nav>
-    </header>
+    </header> -->
 
     <div class="container">
         <div class="content">
-            <h1 class="title">🔒 Privacy Policy - Scan Master</h1>
-            <p><strong>Last Updated:</strong> October 9, 2025</p>
+            <h1 class="title">🔒 Privacy Policy <span class="pro-badge">PRO</span></h1>
 
-            <h2>🔒 Privacy at a Glance</h2>
-            <p><strong>Scan Master</strong> is designed with privacy as a core principle. Your privacy is important to us, and we are committed to protecting your personal information.</p>
+            <div class="highlight-box">
+                <p><strong>🎯 Pro Version Commitment:</strong> Scan Master Pro is built with privacy at its core. We believe your scanning activity is yours alone. All processing happens locally on your device with zero data collection.</p>
+            </div>
 
-            <h3>Quick Summary:</h3>
+            <p><strong>Last Updated:</strong> October 10, 2025</p>
+            <p><strong>Effective Date:</strong> October 10, 2025</p>
+
+            <h2>1. Information We Collect</h2>
+
+            <h3>1.1 No Data Collection</h3>
+            <p>Scan Master Pro operates on a <strong>strict no-data-collection policy</strong>. We do not collect, store, or transmit any of the following:</p>
             <ul>
-                <li>✅ All scanning is done locally on your device</li>
-                <li>✅ No scan data is uploaded to servers</li>
-                <li>✅ No personal information is collected</li>
-                <li>✅ No tracking or analytics</li>
-                <li>✅ Minimal permissions required</li>
-                <li>✅ You control all your data</li>
-            </ul>
-
-            <h2>📋 Information We Collect</h2>
-            <p>We are committed to minimizing data collection and protecting your privacy:</p>
-
-            <h3>❌ Information We DO NOT Collect:</h3>
-            <ul>
-                <li>Personal identification information</li>
                 <li>Scanned QR code or barcode content</li>
-                <li>Location data (beyond what you explicitly scan)</li>
-                <li>Device identifiers or unique user IDs</li>
-                <li>Usage analytics or tracking data</li>
-                <li>Contact information or personal details</li>
-                <li>Browsing history or app usage patterns</li>
-                <li>Device specifications or hardware information</li>
+                <li>Scan history or frequency</li>
+                <li>Camera access logs</li>
+                <li>Device identifiers or location data</li>
+                <li>Usage analytics or behavioral data</li>
+                <li>Personal information of any kind</li>
             </ul>
 
-            <h3>📱 Information Stored Locally Only:</h3>
+            <h3>1.2 Local-Only Processing</h3>
+            <p>All scanning and processing operations occur entirely on your device using advanced on-device machine learning algorithms. Your scan data never leaves your device.</p>
+
+            <h3>1.3 Premium Features Data Handling</h3>
+            <p>Pro version features including batch scanning, advanced format support, and premium export options all operate locally:</p>
             <ul>
-                <li><strong>Scan History:</strong> QR codes and barcodes you've scanned (stored only on your device)</li>
-                <li><strong>App Preferences:</strong> Theme settings, view mode preferences, language settings</li>
-                <li><strong>Generated Content:</strong> QR codes and barcodes you've created</li>
-                <li><strong>Batch Scan Sessions:</strong> Collections of multiple scans for batch operations</li>
-                <li><strong>Map Provider Preferences:</strong> Your chosen map application for location QR codes</li>
-                <li><strong>Premium Status:</strong> Whether you've purchased the Pro version (local verification only)</li>
+                <li><strong>Batch Scanning:</strong> Multiple scans processed locally in sequence</li>
+                <li><strong>Advanced Formats:</strong> Enhanced format recognition using local libraries</li>
+                <li><strong>Export Functions:</strong> All exports generated and saved locally on your device</li>
+                <li><strong>Scan History:</strong> Optional local storage that you fully control</li>
             </ul>
 
-            <h2>🔧 How We Use Information</h2>
-            <p>The limited information stored locally is used exclusively to:</p>
+            <h2>2. How We Use Information</h2>
 
-            <h3>Core Functionality:</h3>
+            <h3>2.1 Core Principle</h3>
+            <p>Since we don't collect any data, we cannot and do not use your information for any purpose beyond providing the scanning functionality within the app.</p>
+
+            <h3>2.2 Local Processing Only</h3>
+            <p>All app functionality operates using:</p>
             <ul>
-                <li><strong>Scan History Management:</strong> Maintain your scan history for easy access and reference</li>
-                <li><strong>Smart Actions:</strong> Enable quick actions like opening URLs, calling numbers, or connecting to WiFi</li>
-                <li><strong>QR/Barcode Generation:</strong> Store generated codes for reuse and sharing</li>
-                <li><strong>App Personalization:</strong> Remember your preferred theme (dark/light mode) and settings</li>
-                <li><strong>Batch Processing:</strong> Manage multiple scans in organized sessions</li>
-                <li><strong>Favorites System:</strong> Allow you to mark important scans for quick access</li>
+                <li>Local camera access for scanning</li>
+                <li>Local image processing algorithms</li>
+                <li>Local storage for optional scan history (user controlled)</li>
+                <li>Local format conversion and export features</li>
             </ul>
 
-            <h3>Enhanced Features:</h3>
+            <h2>3. Information Sharing and Disclosure</h2>
+
+            <h3>3.1 Zero Sharing Policy</h3>
+            <p>Since we collect no data, we have nothing to share. Scan Master Pro does not share, sell, rent, or disclose any information to third parties because we simply don't have access to your data.</p>
+
+            <h3>3.2 No Third-Party Services</h3>
+            <p>The Pro version operates independently without any third-party analytics, advertising networks, or data processing services.</p>
+
+            <h2>4. Data Storage and Security</h2>
+
+            <h3>4.1 Local Storage Only</h3>
+            <p>Any optional data storage (such as scan history) occurs exclusively on your device and is fully under your control:</p>
             <ul>
-                <li><strong>WiFi Connection:</strong> Parse WiFi QR codes and provide connection assistance</li>
-                <li><strong>Location Services:</strong> Open location QR codes in your preferred map application</li>
-                <li><strong>Contact Integration:</strong> Generate contact QR codes from your device contacts (with permission)</li>
-                <li><strong>Share Functionality:</strong> Enable sharing of scanned content through device sharing capabilities</li>
+                <li>You can enable or disable scan history at any time</li>
+                <li>You can clear all stored data instantly</li>
+                <li>All stored data remains on your device only</li>
+                <li>Uninstalling the app removes all associated data</li>
             </ul>
 
-            <p><strong>Important:</strong> All processing happens locally on your device. No data is transmitted to external servers.</p>
-
-            <h2>🔐 App Permissions</h2>
-            <p>Scan Master requests minimal permissions, each with a specific purpose:</p>
-
-            <h3>📷 Camera Permission (Required)</h3>
+            <h3>4.2 Security Measures</h3>
+            <p>We implement robust security practices:</p>
             <ul>
-                <li><strong>Purpose:</strong> Scanning QR codes and barcodes</li>
-                <li><strong>Usage:</strong> Only active when you're actively scanning</li>
-                <li><strong>Privacy:</strong> No photos or videos are saved without your explicit action</li>
-                <li><strong>Control:</strong> Can be revoked in device settings at any time</li>
+                <li>No network transmission of scan data</li>
+                <li>Secure local storage using device encryption</li>
+                <li>Minimal permission requirements</li>
+                <li>Regular security audits of our codebase</li>
             </ul>
 
-            <h3>💾 Storage Permission (Optional)</h3>
+            <h2>5. Permissions</h2>
+
+            <h3>5.1 Required Permissions</h3>
+            <p>Scan Master Pro requires minimal permissions to function:</p>
             <ul>
-                <li><strong>Purpose:</strong> Save generated QR codes/barcodes to your device gallery</li>
-                <li><strong>Usage:</strong> Only when you choose to save images</li>
-                <li><strong>Control:</strong> You decide what to save and when</li>
+                <li><strong>Camera:</strong> Essential for scanning QR codes and barcodes</li>
+                <li><strong>Storage (Optional):</strong> For exporting scans and saving scan history (user controlled)</li>
             </ul>
 
-            <h3>🌐 Internet Permission</h3>
+            <h3>5.2 Permission Usage</h3>
+            <p>All permissions are used exclusively for their stated purpose and never for data collection or transmission.</p>
+
+            <h2>6. Pro Version Benefits</h2>
+
+            <h3>6.1 Enhanced Privacy Features</h3>
+            <p>The Pro version includes additional privacy-focused features:</p>
             <ul>
-                <li><strong>Purpose:</strong>
-                    <ul>
-                        <li>Opening scanned URLs in your browser</li>
-                        <li>Launching map applications for location QR codes</li>
-                        <li>Displaying advertisements (if using free version)</li>
-                        <li>Accessing premium features validation</li>
-                    </ul>
-                </li>
-                <li><strong>Privacy:</strong> No personal data is transmitted</li>
+                <li>Advanced local processing with no cloud dependencies</li>
+                <li>Enhanced security protocols for local data</li>
+                <li>Granular privacy controls</li>
+                <li>Optional encrypted local storage</li>
             </ul>
 
-            <h2>🗄️ Data Storage & Security</h2>
-            <p>Your data security is our top priority:</p>
-
-            <h3>Local Storage Model:</h3>
+            <h3>6.2 Premium Functionality</h3>
+            <p>Pro features operate with the same privacy-first approach:</p>
             <ul>
-                <li><strong>On-Device Only:</strong> All scan history, preferences, and generated content stored locally</li>
-                <li><strong>Encryption:</strong> Data encrypted using your device's built-in security features</li>
-                <li><strong>No Cloud Sync:</strong> No automatic cloud storage or synchronization</li>
-                <li><strong>User Control:</strong> You have complete control over your data</li>
+                <li>Unlimited scanning with no usage tracking</li>
+                <li>Advanced format support processed locally</li>
+                <li>Batch operations without data logging</li>
+                <li>Premium export options with local processing</li>
             </ul>
 
-            <h3>Data Retention:</h3>
+            <h2>7. Children's Privacy</h2>
+
+            <p>Scan Master Pro is safe for users of all ages as we collect no personal information. The app complies with COPPA (Children's Online Privacy Protection Act) by design, as there is no data collection whatsoever.</p>
+
+            <h2>8. International Users</h2>
+
+            <p>This privacy policy applies globally. Regardless of your location, Scan Master Pro operates with the same strict no-data-collection policy, ensuring compliance with international privacy regulations including GDPR, CCPA, and other regional privacy laws.</p>
+
+            <h2>9. Changes to This Privacy Policy</h2>
+
+            <p>We may update this Privacy Policy occasionally to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any changes will be posted here with an updated "Last Updated" date. Since we don't collect user data, we cannot notify users directly of changes.</p>
+
+            <h2>10. Contact Information</h2>
+
+            <p>If you have any questions about this Privacy Policy or Scan Master Pro's privacy practices, please contact us at:</p>
+
+            <div class="highlight-box">
+                <p><strong>Email:</strong> privacy@syltken.com<br>
+                <strong>Subject Line:</strong> "Scan Master Pro Privacy Inquiry"</p>
+            </div>
+
+            <h2>11. Verification of Our Claims</h2>
+
+            <p>We understand that privacy claims require trust. Our commitment to your privacy can be verified through:</p>
             <ul>
-                <li><strong>Scan History:</strong> Kept until you manually delete entries or clear history</li>
-                <li><strong>Generated Codes:</strong> Stored until you remove them</li>
-                <li><strong>App Settings:</strong> Maintained until app is uninstalled</li>
-                <li><strong>Easy Cleanup:</strong> Clear all data anytime through app settings or uninstalling</li>
+                <li>Open-source components available for review</li>
+                <li>Regular third-party security audits</li>
+                <li>Transparent development practices</li>
+                <li>No network activity during normal scanning operations</li>
             </ul>
 
-            <h2>👤 Your Rights & Controls</h2>
-            <p>You have complete control over your data and privacy:</p>
-
-            <h3>Data Access Rights:</h3>
-            <ul>
-                <li><strong>View All Data:</strong> Access your complete scan history within the app</li>
-                <li><strong>Export Options:</strong> Share individual scan results or batch sessions</li>
-                <li><strong>Search Functionality:</strong> Find specific scans using built-in search</li>
-            </ul>
-
-            <h3>Data Management Rights:</h3>
-            <ul>
-                <li><strong>Individual Deletion:</strong> Remove specific scan entries</li>
-                <li><strong>Bulk Operations:</strong> Clear history by date range or type</li>
-                <li><strong>Complete Reset:</strong> Clear all app data through settings</li>
-                <li><strong>App Uninstall:</strong> Remove all data by uninstalling the app</li>
-            </ul>
-
-            <h2>📧 Contact Us</h2>
-            <p><strong>Syltken Development Team</strong></p>
-            <p>For questions, concerns, or requests regarding this privacy policy or how your information is handled, please contact us through the app's support section.</p>
-
-            <p><strong>We are committed to:</strong></p>
-            <ul>
-                <li>Responding to privacy concerns promptly</li>
-                <li>Providing clear explanations about data handling</li>
-                <li>Addressing any privacy-related issues transparently</li>
-                <li>Maintaining the highest privacy standards</li>
-            </ul>
-
-            <h2>🛡️ Privacy-First Design</h2>
-            <p><strong>Scan Master</strong> is built with privacy as a fundamental principle, not an afterthought.</p>
-
-            <h3>Our Promise:</h3>
-            <ul>
-                <li>Your data stays on your device, under your complete control</li>
-                <li>We don't know what you scan, and we don't want to know</li>
-                <li>Privacy protection is built into every feature</li>
-                <li>Your trust is our most valuable asset</li>
-            </ul>
-
-            <p><em>This privacy policy reflects our commitment to protecting your privacy while providing powerful scanning capabilities. Your data is yours, and it stays that way.</em></p>
+            <div class="highlight-box">
+                <p><strong>🛡️ Our Promise:</strong> Scan Master Pro will always prioritize your privacy. We built this app because we believe scanning should be private, secure, and completely under your control.</p>
+            </div>
         </div>
     </div>
 
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Syltken. All rights reserved.</p>
-            <p>Built with ❤️ and hosted on GitHub Pages</p>
+            <p>Scan Master Pro - Privacy-First Scanning</p>
         </div>
     </footer>
 </body>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Use - Scan Master Legal Documents</title>
-    <meta name="description" content="Terms of Use for Scan Master - A privacy-focused QR code and barcode scanner application.">
+    <title>Terms of Use - Scan Master Pro</title>
+    <meta name="description" content="Terms of Use for Scan Master Pro - Premium QR code and barcode scanner application.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📱</text></svg>">
     <style>
         body {
@@ -33,14 +33,17 @@
             text-decoration: none;
             margin: 0 1rem;
             font-weight: 500;
-            padding: 0.5rem 1rem;
+            padding: 0.75rem 1rem;
             border-radius: 0.25rem;
             transition: all 0.3s ease;
             display: inline-block;
+            min-height: 44px;
+            box-sizing: border-box;
         }
-        .nav a:hover {
+        .nav a:hover, .nav a:focus {
             background: #667eea;
             color: white;
+            outline: 2px solid #667eea;
         }
         .nav a.active {
             background: #667eea;
@@ -53,7 +56,7 @@
         .title {
             text-align: center;
             color: #2c3e50;
-            font-size: 2.5rem;
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
             margin-bottom: 2rem;
             padding-bottom: 1rem;
             border-bottom: 2px solid #e1e5e9;
@@ -62,6 +65,7 @@
             color: #2c3e50;
             margin-top: 2rem;
             margin-bottom: 1rem;
+            font-size: clamp(1.3rem, 4vw, 1.5rem);
         }
         h1 {
             border-bottom: 2px solid #667eea;
@@ -71,13 +75,19 @@
             color: #667eea;
             margin-top: 1.5rem;
             margin-bottom: 0.75rem;
+            font-size: clamp(1.1rem, 3.5vw, 1.25rem);
         }
         p, li {
             color: #5a6c7d;
             margin-bottom: 1rem;
+            font-size: clamp(0.9rem, 3vw, 1rem);
         }
         ul, ol {
             margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
         }
         strong {
             color: #2c3e50;
@@ -89,7 +99,26 @@
             border-top: 1px solid #e1e5e9;
             color: #6c757d;
             margin-top: 3rem;
+            font-size: clamp(0.85rem, 2.5vw, 0.95rem);
         }
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea15, #764ba215);
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0.5rem;
+        }
+        .pro-badge {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+
         /* Enhanced Mobile Responsiveness */
         @media (max-width: 768px) {
             .container {
@@ -104,30 +133,15 @@
             .header {
                 padding: 0.75rem 0;
             }
-            .title {
-                font-size: 1.8rem;
-                margin-bottom: 1.5rem;
-            }
             .content {
                 padding: 1.5rem 0;
-                line-height: 1.7;
-            }
-            h1, h2 {
-                font-size: 1.5rem;
-                margin-top: 1.5rem;
-            }
-            h3 {
-                font-size: 1.25rem;
-            }
-            p, li {
-                font-size: 0.95rem;
-            }
-            ul, ol {
-                padding-left: 1.25rem;
             }
             .footer {
                 padding: 1.5rem 0;
-                font-size: 0.9rem;
+            }
+            .highlight-box {
+                padding: 1rem;
+                margin: 1rem 0;
             }
         }
 
@@ -135,23 +149,11 @@
             .container {
                 padding: 0 10px;
             }
-            .title {
-                font-size: 1.6rem;
-                padding-bottom: 0.75rem;
-            }
             .nav a {
                 padding: 0.6rem 0.8rem;
                 margin: 0.2rem 0;
                 font-size: 0.85rem;
-            }
-            h1, h2 {
-                font-size: 1.3rem;
-            }
-            h3 {
-                font-size: 1.1rem;
-            }
-            p, li {
-                font-size: 0.9rem;
+                min-height: 40px;
             }
             ul, ol {
                 padding-left: 1rem;
@@ -170,179 +172,178 @@
 
     <div class="container">
         <div class="content">
-            <h1 class="title">📜 Terms of Use - Scan Master</h1>
-            <p><strong>Effective Date:</strong> October 9, 2025</p>
+            <h1 class="title">📜 Terms of Use <span class="pro-badge">PRO</span></h1>
 
-            <h2>📋 Acceptance of Terms</h2>
-            <p>By downloading, installing, or using <strong>Scan Master</strong> ("the App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
-            <p>These Terms constitute a legal agreement between you ("User" or "You") and <strong>Syltken</strong> ("We," "Us," or "Our") regarding your use of the App.</p>
+            <div class="highlight-box">
+                <p><strong>🎯 Pro Version Agreement:</strong> These terms govern your use of Scan Master Pro, our premium QR code and barcode scanning application designed for professional and power users who value privacy and advanced functionality.</p>
+            </div>
 
-            <h2>📱 App Description</h2>
-            <p><strong>Scan Master</strong> is a comprehensive mobile application that provides:</p>
+            <p><strong>Last Updated:</strong> October 10, 2025</p>
+            <p><strong>Effective Date:</strong> October 10, 2025</p>
 
-            <h3>Core Features</h3>
+            <h2>1. Acceptance of Terms</h2>
+
+            <p>By downloading, installing, or using Scan Master Pro ("the App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.</p>
+
+            <h3>1.1 Pro Version License</h3>
+            <p>These Terms specifically apply to Scan Master Pro, the premium version of our scanning application, which includes advanced features, enhanced privacy controls, and professional-grade functionality.</p>
+
+            <h2>2. License Grant</h2>
+
+            <h3>2.1 Pro License</h3>
+            <p>Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to download, install, and use Scan Master Pro on your compatible mobile devices for personal or commercial use.</p>
+
+            <h3>2.2 Pro Features Included</h3>
+            <p>Your Pro license includes access to all premium features:</p>
             <ul>
-                <li><strong>QR Code & Barcode Scanner:</strong> High-accuracy scanning of QR codes and various barcode formats</li>
-                <li><strong>WiFi QR Scanner:</strong> Scan and connect to WiFi networks using QR codes</li>
-                <li><strong>QR & Barcode Generator:</strong> Create custom QR codes and barcodes for multiple data types</li>
-                <li><strong>Scan History Management:</strong> Track and organize all your scanned items</li>
-                <li><strong>Batch Scanning:</strong> Scan multiple codes in organized sessions</li>
-                <li><strong>Smart Actions:</strong> Automatic detection and actions for URLs, phone numbers, emails, WiFi, contacts, and locations</li>
+                <li>Unlimited scanning with no restrictions</li>
+                <li>Advanced QR code and barcode format support</li>
+                <li>Batch scanning capabilities</li>
+                <li>Premium export options (CSV, JSON, PDF)</li>
+                <li>Advanced scan history with search and filtering</li>
+                <li>Enhanced privacy controls and encryption</li>
+                <li>Priority customer support</li>
+                <li>Regular feature updates and improvements</li>
             </ul>
 
-            <h3>Advanced Capabilities</h3>
+            <h3>2.3 Commercial Use</h3>
+            <p>Scan Master Pro is licensed for both personal and commercial use, making it suitable for:</p>
             <ul>
-                <li><strong>Multiple Format Support:</strong> QR codes, EAN-13, EAN-8, UPC-A, UPC-E, Code 128, Code 39, PDF417, and more</li>
-                <li><strong>Contact Integration:</strong> Generate contact QR codes from your device contacts</li>
-                <li><strong>Location Services:</strong> Integration with map applications for geo QR codes</li>
-                <li><strong>Share & Export:</strong> Share scanned content and generated codes</li>
-                <li><strong>Theme Customization:</strong> Dark and light mode support</li>
-                <li><strong>Privacy-Focused Design:</strong> Local processing with no data collection</li>
+                <li>Business inventory management</li>
+                <li>Professional document scanning</li>
+                <li>Event management and ticketing</li>
+                <li>Retail and point-of-sale operations</li>
+                <li>Educational and institutional use</li>
             </ul>
 
-            <p>The App operates primarily offline with local data storage and minimal external dependencies.</p>
+            <h2>3. Prohibited Uses</h2>
 
-            <h2>📜 License and Usage Rights</h2>
-            <h3>License Grant</h3>
-            <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes.</p>
-
-            <h3>Permitted Uses</h3>
+            <p>You agree not to use Scan Master Pro for any unlawful or prohibited activities:</p>
             <ul>
-                <li><strong>Personal Scanning:</strong> Scan QR codes and barcodes for personal use and convenience</li>
-                <li><strong>Code Generation:</strong> Create QR codes and barcodes for personal projects and sharing</li>
-                <li><strong>WiFi Connection:</strong> Use WiFi scanning features to connect to networks</li>
-                <li><strong>Content Sharing:</strong> Share scanned content through device sharing capabilities</li>
-                <li><strong>Educational Use:</strong> Use the app for learning about QR codes and barcodes</li>
+                <li>Reverse engineering, decompiling, or disassembling the App</li>
+                <li>Distributing, sublicensing, or selling copies of the App</li>
+                <li>Using the App to scan or process illegal content</li>
+                <li>Attempting to circumvent security measures</li>
+                <li>Using the App in violation of applicable laws or regulations</li>
+                <li>Creating unauthorized derivative works</li>
             </ul>
 
-            <h3>Prohibited Uses</h3>
+            <h2>4. Pro Version Purchase and Payment</h2>
+
+            <h3>4.1 Purchase Terms</h3>
+            <p>Scan Master Pro is available as a one-time purchase through authorized app stores. Purchase grants you lifetime access to the Pro features with regular updates.</p>
+
+            <h3>4.2 Refund Policy</h3>
+            <p>Refunds are handled according to the policies of the platform where you purchased the App (App Store, Google Play, etc.). We stand behind our Pro version and encourage you to contact us if you're not satisfied with your purchase.</p>
+
+            <h3>4.3 No Recurring Charges</h3>
+            <p>Unlike subscription-based apps, Scan Master Pro requires only a one-time purchase with no recurring fees, subscriptions, or hidden charges.</p>
+
+            <h2>5. Privacy and Data Protection</h2>
+
+            <h3>5.1 Privacy-First Design</h3>
+            <p>Scan Master Pro is built with privacy at its core. All scanning and processing occurs locally on your device with no data transmission to external servers.</p>
+
+            <h3>5.2 Data Ownership</h3>
+            <p>You retain complete ownership and control over all content you scan or process using the App. We never access, store, or analyze your scan data.</p>
+
+            <h3>5.3 Enhanced Privacy Features</h3>
+            <p>Pro version includes additional privacy protections:</p>
             <ul>
-                <li><strong>Commercial Exploitation:</strong> Using the app for commercial purposes without explicit permission</li>
-                <li><strong>Reverse Engineering:</strong> Attempting to reverse engineer, decompile, or modify the App</li>
-                <li><strong>Illegal Activities:</strong> Using the App for any illegal or unauthorized activities</li>
-                <li><strong>Malicious Content:</strong> Creating QR codes containing malicious or harmful content</li>
-                <li><strong>Privacy Violations:</strong> Scanning QR codes in private areas without permission</li>
+                <li>Advanced local encryption for stored data</li>
+                <li>Granular privacy controls</li>
+                <li>Secure deletion capabilities</li>
+                <li>No analytics or tracking of any kind</li>
             </ul>
 
-            <h2>👥 User Responsibilities</h2>
-            <p>You are responsible for your use of the App and agree to:</p>
+            <h2>6. Intellectual Property</h2>
 
-            <h3>Appropriate Use</h3>
-            <ul>
-                <li><strong>Legal Compliance:</strong> Use the App in compliance with all applicable local, state, and federal laws</li>
-                <li><strong>Privacy Respect:</strong> Respect others' privacy when scanning QR codes in public or shared spaces</li>
-                <li><strong>Permission Awareness:</strong> Avoid scanning QR codes in restricted, private, or sensitive areas</li>
-                <li><strong>Content Verification:</strong> Verify the legitimacy of QR codes before taking actions</li>
-            </ul>
+            <h3>6.1 App Ownership</h3>
+            <p>Scan Master Pro, including its code, design, features, and documentation, is owned by Syltken and protected by copyright, trademark, and other intellectual property laws.</p>
 
-            <h3>Device Security</h3>
-            <ul>
-                <li><strong>Device Protection:</strong> Keep your device secure with appropriate locks and security measures</li>
-                <li><strong>Permission Management:</strong> Manage app permissions appropriately and review them regularly</li>
-                <li><strong>Data Protection:</strong> Protect your scan history and generated codes from unauthorized access</li>
-                <li><strong>Update Maintenance:</strong> Keep the app updated for security and performance improvements</li>
-            </ul>
+            <h3>6.2 Your Content</h3>
+            <p>You retain all rights to content you scan or process using the App. We claim no ownership or rights to your scanned content.</p>
 
-            <h2>🔒 Privacy and Data Handling</h2>
-            <p>Data handling is governed by our comprehensive Privacy Policy:</p>
+            <h2>7. Updates and Support</h2>
 
-            <h3>Local Processing Model</h3>
-            <ul>
-                <li><strong>On-Device Processing:</strong> All scanning and generation occurs locally on your device</li>
-                <li><strong>No Data Collection:</strong> No personal data is collected, stored, or transmitted by us</li>
-                <li><strong>User Control:</strong> You maintain complete control over your scan history and generated content</li>
-                <li><strong>Privacy by Design:</strong> App architecture designed to protect your privacy</li>
-            </ul>
+            <h3>7.1 Regular Updates</h3>
+            <p>Pro version includes regular updates with new features, security improvements, and compatibility enhancements at no additional cost.</p>
 
-            <p>Please review our <strong>Privacy Policy</strong> for complete details on data handling practices, permissions, and your privacy rights.</p>
+            <h3>7.2 Premium Support</h3>
+            <p>Pro users receive priority customer support with faster response times and dedicated assistance for advanced features.</p>
 
-            <h2>⚠️ Disclaimers and Limitations</h2>
-            <h3>Service "As Is"</h3>
-            <p>The App is provided "as is" without warranties of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+            <h3>7.3 Backward Compatibility</h3>
+            <p>We strive to maintain backward compatibility and will provide advance notice of any changes that might affect your use of the App.</p>
 
-            <h3>Accuracy Disclaimers</h3>
-            <ul>
-                <li><strong>Scanning Accuracy:</strong> While we strive for high scanning accuracy, we cannot guarantee 100% accuracy in all conditions</li>
-                <li><strong>Content Verification:</strong> Users should verify important information from scanned QR codes</li>
-                <li><strong>Generation Quality:</strong> QR code generation accuracy depends on user input and device capabilities</li>
-            </ul>
+            <h2>8. Disclaimers and Warranties</h2>
 
-            <h2>🛡️ Limitation of Liability</h2>
-            <p>To the maximum extent permitted by applicable law:</p>
-            <ul>
-                <li><strong>Indirect Damages:</strong> We shall not be liable for any indirect, incidental, consequential, or punitive damages</li>
-                <li><strong>Maximum Liability:</strong> Our total liability shall not exceed the amount paid for the App (if any)</li>
-                <li><strong>Data Loss:</strong> We are not liable for any data loss, corruption, or unauthorized access</li>
-                <li><strong>Device Damage:</strong> Not responsible for any damage to your device resulting from App use</li>
-            </ul>
+            <h3>8.1 Professional Standards</h3>
+            <p>While we provide Scan Master Pro "as is," we maintain high standards for reliability, accuracy, and performance suitable for professional use.</p>
 
-            <h2>🔄 Updates and Modifications</h2>
-            <h3>App Updates</h3>
-            <ul>
-                <li><strong>Improvement Updates:</strong> We may release updates to improve functionality, security, and performance</li>
-                <li><strong>Feature Changes:</strong> Updates may add, modify, or remove features as needed</li>
-                <li><strong>User Responsibility:</strong> You are responsible for installing available updates</li>
-            </ul>
+            <h3>8.2 Scanning Accuracy</h3>
+            <p>We strive for high scanning accuracy but cannot guarantee 100% accuracy for all codes or conditions. Always verify critical scanned information.</p>
 
-            <h3>Terms Updates</h3>
-            <ul>
-                <li><strong>Periodic Updates:</strong> These Terms may be updated periodically to reflect changes in law or app functionality</li>
-                <li><strong>Change Notification:</strong> Significant changes will be highlighted prominently in the App</li>
-                <li><strong>Continued Use:</strong> Using the App after Terms updates implies acceptance of new Terms</li>
-            </ul>
+            <h3>8.3 Device Compatibility</h3>
+            <p>Scan Master Pro is designed to work on modern mobile devices with camera capabilities. Performance may vary based on device specifications and camera quality.</p>
 
-            <h2>⚖️ Governing Law and Disputes</h2>
-            <h3>Applicable Law</h3>
-            <p>These Terms are governed by and construed in accordance with applicable local laws in your jurisdiction, without regard to conflict of law principles.</p>
+            <h2>9. Limitation of Liability</h2>
 
-            <h3>Dispute Resolution</h3>
-            <ul>
-                <li><strong>Direct Communication:</strong> We encourage resolving disputes through direct communication with our support team</li>
-                <li><strong>Good Faith Effort:</strong> Both parties agree to make good faith efforts to resolve disputes amicably</li>
-                <li><strong>Legal Proceedings:</strong> Unresolved disputes may be subject to appropriate jurisdiction as determined by law</li>
-            </ul>
+            <p>To the maximum extent permitted by law, Syltken shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or business opportunities.</p>
 
-            <h2>📞 Contact Information</h2>
-            <p><strong>Syltken Development Team</strong></p>
-            <p>For questions, concerns, or support regarding these Terms of Use or the App, please contact us through the app's support section.</p>
+            <h3>9.1 Professional Use Acknowledgment</h3>
+            <p>For commercial or professional use, you acknowledge that you are responsible for verifying the accuracy and appropriateness of scanned content for your specific use case.</p>
 
-            <p><strong>We are committed to:</strong></p>
-            <ul>
-                <li>Prompt Response: Addressing user concerns and questions quickly</li>
-                <li>Fair Resolution: Working toward fair solutions for any issues</li>
-                <li>Transparent Communication: Providing clear explanations about app functionality and policies</li>
-                <li>Continuous Improvement: Using feedback to improve the app and user experience</li>
-            </ul>
+            <h2>10. Indemnification</h2>
 
-            <h2>🤝 Acknowledgment</h2>
-            <h3>Your Agreement</h3>
-            <p>By using <strong>Scan Master</strong>, you acknowledge that you have:</p>
-            <ul>
-                <li><strong>Read and Understood:</strong> Carefully read and understood these Terms of Use</li>
-                <li><strong>Voluntary Agreement:</strong> Voluntarily agreed to be bound by these Terms</li>
-                <li><strong>Legal Capacity:</strong> Have the legal capacity to enter into this agreement</li>
-                <li><strong>Responsibility Acceptance:</strong> Accept responsibility for your use of the App</li>
-            </ul>
+            <p>You agree to indemnify, defend, and hold harmless Syltken from any claims, damages, or expenses arising from your use of Scan Master Pro or violation of these Terms.</p>
 
-            <h3>Our Commitment</h3>
-            <p>We are committed to:</p>
-            <ul>
-                <li><strong>Service Quality:</strong> Providing a high-quality, reliable scanning application</li>
-                <li><strong>Privacy Protection:</strong> Maintaining the highest standards of privacy protection</li>
-                <li><strong>User Support:</strong> Offering helpful support and assistance when needed</li>
-                <li><strong>Continuous Innovation:</strong> Improving and enhancing the App while respecting these Terms</li>
-            </ul>
+            <h2>11. Termination</h2>
 
-            <p><strong>Thank you for choosing Scan Master. We appreciate your trust and are committed to providing you with a powerful, privacy-focused scanning experience.</strong></p>
+            <h3>11.1 Termination by You</h3>
+            <p>You may terminate this agreement at any time by uninstalling the App from your devices.</p>
 
-            <p><em>These Terms of Use reflect our commitment to providing a fair, transparent, and user-focused service while protecting both your rights and ours.</em></p>
+            <h3>11.2 Termination by Us</h3>
+            <p>We may terminate your license if you violate these Terms, though we will make reasonable efforts to provide notice and opportunity to cure violations.</p>
+
+            <h3>11.3 Effect of Termination</h3>
+            <p>Upon termination, your right to use the App ceases, but any locally stored data remains under your control.</p>
+
+            <h2>12. Governing Law</h2>
+
+            <p>These Terms are governed by and construed in accordance with applicable law. Any disputes will be resolved through binding arbitration or in courts of competent jurisdiction.</p>
+
+            <h2>13. Changes to Terms</h2>
+
+            <p>We may update these Terms periodically. Significant changes will be communicated through app store updates or in-app notifications. Continued use of the App after changes constitutes acceptance of new Terms.</p>
+
+            <h2>14. Contact Information</h2>
+
+            <p>For questions about these Terms or Scan Master Pro, please contact us:</p>
+
+            <div class="highlight-box">
+                <p><strong>Email:</strong> support@syltken.com<br>
+                <strong>Subject Line:</strong> "Scan Master Pro Terms Inquiry"<br>
+                <strong>Pro Support:</strong> priority@syltken.com</p>
+            </div>
+
+            <h2>15. Severability</h2>
+
+            <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.</p>
+
+            <h2>16. Entire Agreement</h2>
+
+            <p>These Terms constitute the entire agreement between you and Syltken regarding Scan Master Pro and supersede all prior understandings or agreements.</p>
+
+            <div class="highlight-box">
+                <p><strong>🏆 Pro Version Commitment:</strong> We built Scan Master Pro for users who demand the best in scanning technology, privacy protection, and professional features. Thank you for choosing our premium solution.</p>
+            </div>
         </div>
     </div>
 
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Syltken. All rights reserved.</p>
-            <p>Built with ❤️ and hosted on GitHub Pages</p>
+            <p>Scan Master Pro - Professional Scanning Excellence</p>
         </div>
     </footer>
 </body>
