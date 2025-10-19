@@ -14,11 +14,14 @@
             padding: 0;
             background: #fdfdfd;
             color: #333;
+            overflow-x: hidden;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 0 20px;
+            overflow-x: hidden;
+            word-wrap: break-word;
         }
         .header {
             background: white;
@@ -81,6 +84,9 @@
             color: #5a6c7d;
             margin-bottom: 1rem;
             font-size: clamp(0.9rem, 3vw, 1rem);
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
         }
         ul, ol {
             margin-bottom: 1rem;
