@@ -1,15 +1,15 @@
-# Scan Master Legal Documents
+# QR Scanner and Generator Pro - Legal Documents
 
-This repository contains the legal documentation for **Scan Master** - a privacy-focused QR code and barcode scanner application.
+This repository contains the legal documentation for **QR Scanner and Generator Pro** - a privacy-focused QR code and barcode scanner and generator application.
 
 ## 🌐 Live Site
 
-Visit the live documentation at: [https://syltken.github.io/scan-master-legal](https://syltken.github.io/scan-master-legal)
+Visit the live documentation at: [https://syltken.github.io/qr-scanner-legal](https://syltken.github.io/qr-scanner-legal)
 
 ## 📋 Documents Available
 
-- **Privacy Policy**: Comprehensive overview of how we protect your privacy
-- **Terms of Use**: Clear terms and conditions for using the Scan Master app
+- **Privacy Policy**: Comprehensive overview of how we protect your privacy with zero data collection
+- **Terms of Use**: Clear terms and conditions for using the QR Scanner and Generator Pro app
 
 ## 🎨 Design Features
 
@@ -21,38 +21,27 @@ Visit the live documentation at: [https://syltken.github.io/scan-master-legal](h
 
 ## 🚀 Technology Stack
 
-- **Jekyll**: Static site generator with Minima theme
+- **Static HTML/CSS**: Pure HTML with responsive design (no Jekyll dependencies)
 - **GitHub Pages**: Free hosting with automatic deployment
-- **Responsive CSS**: Custom styling for enhanced user experience
-- **GitHub Actions**: Automated building and deployment
+- **Mobile-First Design**: Optimized for mobile app integration
+- **Professional Styling**: Clean, modern design with excellent UX/UI
 
 ## 🔧 Local Development
 
-To run this site locally:
+To run this site locally, simply open the HTML files in a web browser or use a local server:
 
-1. **Prerequisites**:
-   ```bash
-   # Install Ruby (version 3.1 or higher)
-   # Install Bundler
-   gem install bundler
-   ```
+```bash
+# Using Python's built-in server
+python -m http.server 8000
 
-2. **Setup**:
-   ```bash
-   # Clone the repository
-   git clone https://github.com/syltken/scan-master-legal.git
-   cd scan-master-legal
+# Using Node.js http-server
+npx http-server
 
-   # Install dependencies
-   bundle install
-   ```
+# Using PHP's built-in server
+php -S localhost:8000
+```
 
-3. **Run locally**:
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-   Visit `http://localhost:4000/scan-master-legal` in your browser.
+Visit `http://localhost:8000` in your browser.
 
 ## 📁 Project Structure
 
@@ -90,12 +79,12 @@ scan-master-legal/
 - **Performance**: Fast loading with minimal resources
 - **Accessibility**: WCAG compliant design
 
-## 📱 Integration with Scan Master App
+## 📱 Integration with QR Scanner and Generator Pro App
 
-This legal documentation site can be easily integrated with the Scan Master mobile app:
+This legal documentation site can be easily integrated with the QR Scanner and Generator Pro mobile app:
 
-- **Privacy Policy Link**: `https://syltken.github.io/scan-master-legal/privacy-policy/`
-- **Terms of Use Link**: `https://syltken.github.io/scan-master-legal/terms-of-use/`
+- **Privacy Policy Link**: `https://syltken.github.io/qr-scanner-legal/privacy-policy.html`
+- **Terms of Use Link**: `https://syltken.github.io/qr-scanner-legal/terms-of-use.html`
 
 ## 🛠️ Customization
 
