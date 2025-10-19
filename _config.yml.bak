@@ -1,6 +1,6 @@
 # Site settings
 title: Scan Master Legal Documents
-email: scan.master@syltken.com
+email: qrscannerpro@syltken.com
 description: >-
   Official privacy policy and terms of use for Scan Master - A privacy-focused
   QR code and barcode scanner application.
@@ -20,7 +20,7 @@ minima:
 # Author information
 author:
   name: Syltken Development Team
-  email: scan.master@syltken.com
+  email: qrscannerpro@syltken.com
 
 # Social links (optional)
 github_username: syltken
